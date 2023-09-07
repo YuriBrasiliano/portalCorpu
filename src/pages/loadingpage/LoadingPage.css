@@ -1,0 +1,32 @@
+.loading-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #6ca79c, #278070, #597e73, #6ca79c, #6ca79c, #278070, #597e73);
+
+  background-size: 600% 600%;
+  animation: gradientAnimation 7s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  opacity: 1;
+  transform: translateY(0%);
+  z-index: 999;
+}
+
+.loading-container.hidden {
+  opacity: 0;
+  transform: translateY(-100%);
+  pointer-events: none;
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
