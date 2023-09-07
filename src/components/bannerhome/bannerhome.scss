@@ -1,0 +1,22 @@
+.bannerhome {
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+  }
+  
+  .banner-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 20px;
+    color: #fff; /* Cor do texto */
+  }
+  
+  .banner-img {
+    opacity: 0.6;
+    width: 60%;
+    float: right;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Cria uma sombra com opacidade nas bordas */
+  }

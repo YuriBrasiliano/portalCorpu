@@ -3,6 +3,7 @@ import './styles/App.css'
 import LoadingPage from './pages/loadingpage/LoadingPage';
 import Navbar from './components/navbar/Navbar';
 import Header from './components/header/Header';
+import BannerHome from './components/bannerhome/BannerHome';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -20,6 +21,7 @@ function App() {
         <>
           <Header />
           <Navbar />
+          <BannerHome />
         </>
       )}
     </div>
