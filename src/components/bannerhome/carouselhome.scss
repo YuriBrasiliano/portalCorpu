@@ -1,0 +1,78 @@
+.carousel-container {
+  width: 98vw;
+  margin: 3% auto; 
+  overflow-x: hidden;}
+
+.title{
+  color: #278070;
+  font-weight: 400;
+  font-size: 2.5vw;
+}
+.subtitle{
+  font-weight: 700;
+}
+.paragraph {
+  color: rgb(71, 70, 70);  
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 1.3vw; /* Use vw para ajustar o tamanho da fonte em relação à largura da tela */
+}
+
+.text {
+  flex: 1;
+  padding: 0 2%;
+  position: absolute; /* Posicionamento absoluto para o texto */
+  bottom: 5%;
+  width: 40%;
+  height: 100%;
+  box-sizing: border-box; /* Para incluir preenchimento e borda no dimensionamento da largura */
+  z-index: 1; /* Elevar o texto acima da imagem */
+}
+
+.image {
+  margin-left: 30%;
+  opacity: 0.7;
+  max-width: 70vw; /* Defina a largura máxima da imagem em relação à largura da tela */
+  max-height: 70vh; /* Defina a altura máxima da imagem */
+  z-index: 0;
+}
+
+/* Personalize a cor dos pontos de navegação */
+.carousel .dot {
+  background-color: #00bcd4; /* Altere a cor conforme necessário */
+  border: 7px solid #00bcd4; /* Borda dos pontos */
+}
+
+/* Estilize a transição entre slides */
+.carousel .slider-wrapper {
+  transition: transform 0.5s ease; /* Tempo de transição e suavidade (ajuste conforme necessário) */
+}
+
+.buttoncarousel {
+  font-weight: 600;
+  border: none;
+  background-color: #278070;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 3%;
+  height: 9%;
+  width: 50%;
+  border-radius: 35px;
+  font-size: 1.3vw;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adicione transições para transform e sombra */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adicione uma sombra */
+}
+
+.buttoncarousel:hover {
+  background-color: #1d5a4f;
+  transform: translateY(-5px); /* Faça o botão subir um pouco */
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4); /* Aumente a sombra ao passar o mouse */
+}
+.linkbutton{
+  text-decoration: none;
+  color: white;
+}
+.subtitle{
+  padding: 0;
+  margin: 0;
+}

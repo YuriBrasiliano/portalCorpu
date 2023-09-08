@@ -8,10 +8,14 @@ function LoadingPage() {
   useEffect(() => {
     const loadingTimer = setTimeout(() => {
       setVisible(false);
-    }, 3200);
+    }, 3800);
 
     return () => clearTimeout(loadingTimer);
   }, []);
+
+  const close = () => {
+    setVisible(false);
+  };
 
   return (
     <div className={`loading-container ${visible ? '' : 'hidden'}`}>
