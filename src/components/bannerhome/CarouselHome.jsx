@@ -15,7 +15,7 @@ const CarouselComponent = () => {
   });
 
   const variants = {
-    hidden: { opacity: 0, y: 30 }, // Estado inicial (invisível)
+    hidden: { opacity: 0, y: 200 }, // Estado inicial (invisível)
     visible: { opacity: 1, y: 0 }, // Estado final (visível)
   };
 
@@ -28,7 +28,7 @@ const CarouselComponent = () => {
       initial="hidden"
       animate={inView ? 'visible' : 'hidden'}
       variants={variants}
-      transition={{ duration: 1, delay: 1 }}
+      transition={{ duration: 1.4, delay: 1 }}
     >
     <div className="carousel-container">
       <Carousel showStatus={false} showArrows={false} autoPlay={true} interval={5000} infiniteLoop={true} transitionTime={2000} stopOnHover={false}>

@@ -4,6 +4,7 @@ import Navbar from '../../components/navbar/Navbar';
 import Header from '../../components/header/Header';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import CarouselHome from '../../components/bannerhome/CarouselHome';
+import Footer from '../../components/footer/Footer';
 
 
 export default function Home(){
@@ -15,7 +16,6 @@ export default function Home(){
       // Simule um processo de carregamento demorado
       setTimeout(() => {
         setLoading(false);
-        loadingPageRef.current.close();
       }, 4800);
     }, []);
 
@@ -29,6 +29,7 @@ export default function Home(){
                 <Header />
                 <Navbar />
                 <CarouselHome />
+                <Footer />
               </>
             )}
           </div>

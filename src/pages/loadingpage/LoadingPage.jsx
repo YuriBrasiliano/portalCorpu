@@ -1,8 +1,8 @@
 import gifImage from '../../assets/images/logoGCOR.webp';
 import './LoadingPage.css';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, forwardRef } from 'react';
 
-function LoadingPage() {
+const LoadingPage = forwardRef((props, ref) => {
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
@@ -13,9 +13,7 @@ function LoadingPage() {
     return () => clearTimeout(loadingTimer);
   }, []);
 
-  const close = () => {
-    setVisible(false);
-  };
+
 
   return (
     <div className={`loading-container ${visible ? '' : 'hidden'}`}>
@@ -23,5 +21,6 @@ function LoadingPage() {
     </div>
   );
 }
+)
 
 export default LoadingPage;

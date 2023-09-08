@@ -11,7 +11,7 @@ export default function Header(){
       });
     
       const variants = {
-        hidden: { opacity: 0, y: 30 }, // Estado inicial (invisível)
+        hidden: { opacity: 0, y: 200 }, // Estado inicial (invisível)
         visible: { opacity: 1, y: 0 }, // Estado final (visível)
       };
 
@@ -22,7 +22,7 @@ export default function Header(){
           initial="hidden"
           animate={inView ? 'visible' : 'hidden'}
           variants={variants}
-          transition={{ duration: 1, delay: 0 }}
+          transition={{ duration: 1.5, delay: 0 }}
         >
         <img src={logo} className="logo" />
         </motion.div>
