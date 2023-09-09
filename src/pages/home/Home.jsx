@@ -5,6 +5,7 @@ import Header from '../../components/header/Header';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import CarouselHome from '../../components/bannerhome/CarouselHome';
 import Footer from '../../components/footer/Footer';
+import Testimonials from '../../components/testimonials/Testimonials';
 
 
 export default function Home(){
@@ -29,6 +30,7 @@ export default function Home(){
                 <Header />
                 <Navbar />
                 <CarouselHome />
+                <Testimonials />
                 <Footer />
               </>
             )}

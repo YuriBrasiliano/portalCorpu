@@ -1,8 +1,7 @@
 .carousel-container {
-  width: 98vw;
-  margin: 3% auto; 
+  width: 98vw; 
   overflow-x: hidden;
-  margin-bottom: 500px;
+  margin-bottom: 200px;
 }
 
 .title{
@@ -23,7 +22,7 @@
   flex: 1;
   padding: 0 2%;
   position: absolute; /* Posicionamento absoluto para o texto */
-  bottom: 5%;
+  
   width: 40%;
   height: 100%;
   box-sizing: border-box; /* Para incluir preenchimento e borda no dimensionamento da largura */
@@ -32,9 +31,9 @@
 
 .image {
   margin-left: 30%;
-  opacity: 0.7;
-  max-width: 70vw; /* Defina a largura máxima da imagem em relação à largura da tela */
-  max-height: 70vh; /* Defina a altura máxima da imagem */
+  opacity: 0.9;
+  width: 70%; /* Defina a largura máxima da imagem em relação à largura da tela */
+  height: 80vh; /* Defina a altura máxima da imagem */
   z-index: 0;
 }
 
