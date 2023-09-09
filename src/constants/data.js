@@ -41,26 +41,26 @@ const CarouselHomeData = [
 export const testimonials = [
   {
     testimonial:
-      "I highly recommend Yuri for his comprehensive understanding of web application development and their ability to create robust and complete applications.",
+      "I highly recommendasdas web application development and their ability to create robust and complete applications.",
     name: "Eliana Colucci",
-    designation: "Manager",
-    company: "Corpu Clinica",
-    image: "https://scontent.fgru19-1.fna.fbcdn.net/v/t1.6435-9/48369129_1979497285479728_8180696999796932608_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeE-xK2nvEuiXWBaZ4vp3Z63P0blNGpZW20_RuU0allbbf6DPrYbGOAWKYe9zwYnLOSbRmq4LfGFKrElbckjWDZI&_nc_ohc=XKJuGVt3e7QAX91rLsc&_nc_ht=scontent.fgru19-1.fna&oh=00_AfCI15cXl1krZ17QpZ3uZBm5ueZKpJrhs-xCkgif7nssdA&oe=64E5504B",
+    rating: "5",
+    doctor: "Eleni Nathanailidis",
+    image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
     "Yuri has the ability to identify and address complex technical issues, as well as his expertise in data analysis and system integration.",
     name: "Renan Araujo",
-    designation: "Manager",
-    company: "Corpu Clinica",
+    rating: "5",
+    doctor: "Walter Moras Junior",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
     "His proficiency in front-end technologies and design principles make him an invaluable asset to any web development project.",
     name: "Gabriela Melo",
-    designation: "Client",
-    company: "Cypher Technologies",
+    rating: "5",
+    doctor: "Maristela Oliveira",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];

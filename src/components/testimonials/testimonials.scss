@@ -1,0 +1,78 @@
+/* testimonials.scss */
+
+.titleTestimonials{
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #1d5a4f;
+    margin-left: 5%;
+    margin-bottom: 4%;
+}
+  
+.carousel-item-testimonial {
+    display: block;
+    padding: 10px;
+    margin-bottom: 14%;
+    border: 2px solid #1d5a4f;
+    background: linear-gradient(#6ca79c, #597e73, #278070);
+    border-radius: 50px;
+    height: 70vh;
+    margin-left: 10%;
+}
+
+.title-image-container {
+    display: flex;
+    justify-content: space-between; /* Coloca o título e a imagem lado a lado */
+    align-items: flex-end; /* Alinhar elementos verticalmente na parte inferior */
+    width: 100%; /* Ocupa toda a largura disponível */
+    margin-top: 35%; /* Empurra para a parte inferior */
+}
+
+.title-testimonial {
+    position: relative;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.testimonial-testimonial {
+    font-size: 1.2em;
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+    font-weight: 500;
+    color: black;
+}
+
+.image-testimonial img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 100%;
+}
+
+.rating {
+    margin-top: -10px;
+    display: inline-block;
+    margin-bottom: 9%;
+}
+
+.testimonial-medico {
+    width: 90%;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.rating .star-icon {
+    font-size: 24px;
+    color: yellow;
+    position: relative;
+}
+
+.testimonials-carousel {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 200px;
+}
+
+
