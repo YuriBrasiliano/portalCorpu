@@ -1,7 +1,7 @@
 import "./testimonials.scss";
 import { Carousel } from "react-responsive-carousel";
-import AnimatedComponent from "../../utils/AnimatedComponent";
-import { testimonials } from "../../constants/data";
+import AnimatedComponent from "../../../utils/AnimatedComponent";
+import { testimonials } from "../../../constants/data";
 
 export default function Testimonials() {
 
@@ -32,11 +32,12 @@ export default function Testimonials() {
         transitionTime={2000}
         stopOnHover={false}
         showThumbs={false} // Desativar as miniaturas
-        emulateTouch={false}
         selectedItem={0}
         dynamicHeight={false}
         centerMode={true}
         centerSlidePercentage={25} // Definir a largura de cada slide visível
+        slidesToSlide={10} // Avança 1 slide de cada vez
+        slidesToShow={4} // Mostra 4 slides de uma vez
       >
         {testimonials.map((testimonial, index) => (
           <div key={index} className="carousel-item-testimonial">

@@ -4,6 +4,7 @@ import React, { useState, useEffect, forwardRef } from 'react';
 
 const LoadingPage = forwardRef((props, ref) => {
   const [visible, setVisible] = useState(true);
+  
 
   useEffect(() => {
     const loadingTimer = setTimeout(() => {

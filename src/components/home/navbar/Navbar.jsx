@@ -1,5 +1,5 @@
 import "./navbar.scss"
-import AnimatedComponent from '../../utils/AnimatedComponent';
+import AnimatedComponent from '../../../utils/AnimatedComponent';
 
 export default function Navbar(){
     return(

@@ -45,7 +45,7 @@ export const testimonials = [
     name: "Eliana Colucci",
     rating: "5",
     doctor: "Eleni Nathanailidis",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    image: "https://randomuser.me/api/portraits/women/2.jpg",
   },
   {
     testimonial:
@@ -53,7 +53,7 @@ export const testimonials = [
     name: "Renan Araujo",
     rating: "5",
     doctor: "Walter Moras Junior",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    image: "https://randomuser.me/api/portraits/men/1.jpg",
   },
   {
     testimonial:
@@ -62,6 +62,22 @@ export const testimonials = [
     rating: "5",
     doctor: "Maristela Oliveira",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
+  },
+  {
+    testimonial:
+    "His proficiency in front-end technologies and design principles make him an invaluable asset to any web development project.",
+    name: "Emily Emanuelly",
+    rating: "5",
+    doctor: "Maristela Oliveira",
+    image: "https://randomuser.me/api/portraits/women/1.jpg",
+  },
+  {
+    testimonial:
+    "His proficiency in front-end technologies and design principles make him an invaluable asset to any web development project.",
+    name: "Fulado de Tal",
+    rating: "5",
+    doctor: "Maristela Oliveira",
+    image: "https://randomuser.me/api/portraits/men/20.jpg",
   },
 ];
 export default CarouselHomeData;

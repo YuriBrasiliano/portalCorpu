@@ -1,7 +1,91 @@
-.logo {
-    width: 35%; // Altere o tamanho da imagem conforme necessário
-    height: auto; // Mantém a proporção da imagem
-    display: flex;
-    padding: 0 0 0 5%;
-    margin: 0;
+.container-header {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 60% 1fr; /* Duas colunas: 60% para a imagem e o restante para outros elementos */
+}
+
+.logo-header {
+  margin-right: 20px;
+  max-width: 70%; /* Garante que a imagem não ultrapasse seu contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+
+
+@media (max-width: 576px) {
+  .text-portal {
+    font-size: 0.8em;
   }
+
+  .text-contact {
+    font-size: 0.8em;
+  }
+
+  .button-container-portal {
+    margin-top: 10px;
+  }
+
+  .hover-button-portal {
+    width: 30px;
+    height: 30px;
+    font-size: 100%;
+  }
+
+  .text-portal
+  {
+    display: none;
+  }
+}
+
+.button-container-portal {
+  position: relative;
+  grid-column: 2;
+}
+
+
+
+.hover-button-portal {
+  background-color: #6bafaf;
+  padding: 20px;
+  border-radius: 50%; /* Usar 50% para um círculo perfeito */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+  z-index: 2;
+  margin-left: 50%;
+  font-size: 1.5em; /* Tamanho de fonte responsivo */
+}
+
+.text-portal {
+  position: absolute;
+  left: 13%; /* Ajustado para uma posição mais responsiva */
+  font-size: 1em; /* Tamanho de fonte responsivo */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 40%; /* Ajustado para uma posição mais responsiva */
+  background-color: #4f8181;
+  color: #fff;
+  transition: left 0.3s ease, opacity 0.3s ease;
+  z-index: 1;
+  top: 50%; /* Centralizado verticalmente */
+  transform: translateY(-50%); /* Centralizado verticalmente */
+  padding: 10px 20px;
+  border-radius: 50px; /* Bordas arredondadas */
+}
+
+.button-icon-portal {
+  color: white;
+  font-size: 100%;
+}
+
+.button-container-portal:hover .hover-button-portal {
+  animation: rotate .5s ease;
+  
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+
+}

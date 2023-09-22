@@ -3,8 +3,8 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Importe os estilos do carrossel
 import './carouselhome.scss'; // Crie um arquivo SCSS para estilizar o carrossel
 import { Link } from "react-router-dom";
-import CarouselHomeData from "../../constants/data";
-import AnimatedComponent from '../../utils/AnimatedComponent';
+import CarouselHomeData from "../../../constants/data.js";
+import AnimatedComponent from '../../../utils/AnimatedComponent';
 
 
 

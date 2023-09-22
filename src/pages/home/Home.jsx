@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import LoadingPage from '../../pages/loadingpage/LoadingPage';
-import Navbar from '../../components/navbar/Navbar';
+import Navbar from '../../components/home/navbar/Navbar';
 import Header from '../../components/header/Header';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import CarouselHome from '../../components/bannerhome/CarouselHome';
+import CarouselHome from '../../components/home/bannerhome/CarouselHome';
 import Footer from '../../components/footer/Footer';
-import Testimonials from '../../components/testimonials/Testimonials';
+import Testimonials from '../../components/home/testimonials/Testimonials';
 
 
 export default function Home(){
