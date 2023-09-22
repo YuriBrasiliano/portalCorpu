@@ -1,5 +1,7 @@
 /* testimonials.scss */
-
+.slick-list{
+    overflow: visible !important;
+}
 .titleTestimonials{
     font-size: 2em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -9,58 +11,59 @@
 }
    
 .carousel-item-testimonial {
-    display: block;
+    display: flex;
+    width: 90% !important;
+    text-align: center;
     padding: 10px;
-    margin-bottom: 14%;
+    margin-bottom: 70%;
     border: 2px solid #1d5a4f;
     background: linear-gradient(#6ca79c, #597e73, #278070);
     border-radius: 50px;
-    height: 70vh;
-    margin-left: 10%;
+    height: 500px;
+    position: relative; /* Para ajustar a posição da imagem */
 }
 
-.title-image-container {
-    display: flex;
-    justify-content: space-between; /* Coloca o título e a imagem lado a lado */
-    align-items: flex-end; /* Alinhar elementos verticalmente na parte inferior */
-    width: 100%; /* Ocupa toda a largura disponível */
-    margin-top: 35%; /* Empurra para a parte inferior */
-}
-
-.title-testimonial {
+.name-testimonial {
     position: relative;
-    color: black;
+    color: #ffffff;
     font-size: 18px;
     font-weight: bold;
     margin: 0;
-    padding: 0;
 }
 
 .testimonial-testimonial {
     font-size: 1.2em;
     width: 80%;
     margin: auto;
+    text-align: justify;
     margin-top: 10%;
     font-weight: 500;
     color: black;
 }
 
 .image-testimonial img {
-    max-width: 60%;
+    width: 35%;
     height: auto;
-    border-radius: 100%;
-}
-
-.rating {
-    margin-top: -10px;
-    display: inline-block;
-    margin-bottom: 9%;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: -15%;
+    margin-bottom: 15%;
 }
 
 .testimonial-medico {
     width: 90%;
+    margin: auto;
+    color: #0c2722;
     font-size: 1rem;
     font-weight: 500;
+    
+    margin-bottom: 25%;
+}
+/*
+.rating {
+    margin-top: -10px;
+    display: inline-block;
+    margin-bottom: 9%;
 }
 
 .rating .star-icon {
@@ -69,10 +72,7 @@
     position: relative;
 }
 
-.testimonials-carousel {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 200px;
-}
+*/
+
 
 

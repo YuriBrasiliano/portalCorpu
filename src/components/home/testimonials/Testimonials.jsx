@@ -2,8 +2,23 @@ import "./testimonials.scss";
 import { Carousel } from "react-responsive-carousel";
 import AnimatedComponent from "../../../utils/AnimatedComponent";
 import { testimonials } from "../../../constants/data";
+import Slider from 'react-slick';
+
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 export default function Testimonials() {
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 4, // Quantidade de slides visíveis ao mesmo tempo
+    slidesToScroll: 1,
+    autoplay: true,
+    pauseOnHover: false,
+    autoplaySpeed: 3000, // Tempo de rotação de cada slide em milissegundos
+  };
 
   /*
   function renderRatingStars(rating) {
@@ -22,45 +37,28 @@ export default function Testimonials() {
     <AnimatedComponent duration={1.4} delay={1}>
       <div className="titleTestimonials">Nossos Pacientes</div>
 
-      <Carousel
-      className="testimonials-carousel"
-        showStatus={false}
-        showArrows={false} // Habilitar as setas de navegação
-        autoPlay={true}
-        interval={5000}
-        infiniteLoop={true}
-        transitionTime={2000}
-        stopOnHover={false}
-        showThumbs={false} // Desativar as miniaturas
-        selectedItem={0}
-        dynamicHeight={false}
-        centerMode={true}
-        centerSlidePercentage={25} // Definir a largura de cada slide visível
-        slidesToSlide={10} // Avança 1 slide de cada vez
-        slidesToShow={4} // Mostra 4 slides de uma vez
-      >
-        {testimonials.map((testimonial, index) => (
-          <div key={index} className="carousel-item-testimonial">
-            <div className="text-testimonial">
-              
+    <Slider {...settings}>
+      {testimonials.map((testimonial, index) => (
+        <div key={index} className="carousel-item-testimonial">
+          <div className="image-testimonial">
+              <img src={testimonial.image} alt={testimonial.name} />
+                </div>
+            
+                <div className="name-testimonial">
+                  <p>{testimonial.name}</p>                
+                <div className="testimonial-medico">
+                 Dr(a). {testimonial.doctor}
+                </div>
+              </div>
+                <div className="text-testimonial">
             <p className="testimonial-testimonial">{testimonial.testimonial}</p>
-              <div className="title-image-container">
-    <div>
-      <div className="title-testimonial">
-        <p>{testimonial.name}</p>
-      </div>
-      <div className="testimonial-medico"><strong>Dr(a).</strong> {testimonial.doctor}</div> {/* Adicionado aqui */}
-    </div>
-    <div className="image-testimonial">
-      <img src={testimonial.image} alt={testimonial.name} />
-    </div>
-  </div>
-</div>
-</div>
-          
-          
-        ))}
-      </Carousel>
+              
+   
+          </div>
+        </div>
+      ))}
+    </Slider>
+
       
     </AnimatedComponent>
     </div>
