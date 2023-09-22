@@ -30,7 +30,9 @@ export default function Navbar(){
                     <a href="/contato">Contato</a>
                 </li>
             </ul>
+            
         </nav>
+        
         </AnimatedComponent>
     )
 }

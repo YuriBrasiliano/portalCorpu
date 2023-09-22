@@ -1,9 +1,7 @@
 import "./testimonials.scss";
-import { Carousel } from "react-responsive-carousel";
 import AnimatedComponent from "../../../utils/AnimatedComponent";
 import { testimonials } from "../../../constants/data";
 import Slider from 'react-slick';
-
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
