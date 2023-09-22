@@ -1,13 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import LoadingPage from '../../utils/loadingpage/LoadingPage';
-import Navbar from '../../components/home/navbar/Navbar';
 import Header from '../../components/header/Header';
-import CarouselHome from '../../components/home/bannerhome/CarouselHome';
 import Footer from '../../components/footer/Footer';
-import Testimonials from '../../components/home/testimonials/Testimonials';
 
 
-export default function Home(){
+export default function About(){
 
     const [loading, setLoading] = useState(true);
     const loadingPageRef = useRef();
@@ -27,9 +24,6 @@ export default function Home(){
             ) : (
               <>
                 <Header />
-                <Navbar />
-                <CarouselHome />
-                <Testimonials />
                 <Footer />
               </>
             )}

@@ -1,9 +1,8 @@
 .carousel-container {
-  width: 98vw; 
+  width: 100vw; 
   overflow-x: hidden;
-  margin-bottom: 200px;
-}
 
+}
 .title{
   color: #278070;
   font-weight: 400;
@@ -13,16 +12,14 @@
   font-weight: 700;
 }
 .paragraph {
-  color: rgb(71, 70, 70);  
-  font-family: "Poppins", Arial, sans-serif;
+  color: rgb(0, 0, 0);
   font-size: 1.3vw; /* Use vw para ajustar o tamanho da fonte em relação à largura da tela */
 }
 
 .text {
   flex: 1;
   padding: 0 2%;
-  position: absolute; /* Posicionamento absoluto para o texto */
-  
+  position: absolute; /* Posicionamento absoluto para o texto */  
   width: 40%;
   height: 100%;
   box-sizing: border-box; /* Para incluir preenchimento e borda no dimensionamento da largura */
@@ -31,9 +28,9 @@
 
 .image {
   margin-left: 30%;
-  opacity: 0.9;
+  opacity: 0.7;
   width: 70%; /* Defina a largura máxima da imagem em relação à largura da tela */
-  height: 80vh; /* Defina a altura máxima da imagem */
+  height: auto; /* Defina a altura máxima da imagem */
   z-index: 0;
 }
 
@@ -54,7 +51,7 @@
   background-color: #278070;
   color: #fff;
   padding: 10px 20px;
-  margin-top: 3%;
+  margin-top: 10%;
   height: 9%;
   width: 50%;
   border-radius: 35px;

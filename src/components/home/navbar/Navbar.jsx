@@ -1,5 +1,6 @@
 import "./navbar.scss"
 import AnimatedComponent from '../../../utils/AnimatedComponent';
+import { Link } from "react-router-dom";
 
 export default function Navbar(){
     return(
@@ -7,27 +8,27 @@ export default function Navbar(){
         <nav className="nav">
             <ul>
                 <li> 
-                    <a href="/">Home</a>
+                    <Link to="/">Home</Link>
                 </li>
                 <li> 
-                    <a href="/especialidades">Especialiades</a>
-                </li>
-
-                <li> 
-                    <a href="/exames">Exames</a>
-                </li>
-                <li> 
-                    <a href="/convenios">Convênios</a>
-                </li>
-                <li> 
-                    <a href="/corpoclinico">Corpo Clínico</a>
+                <Link to="/specialties">Especialiades</Link>
                 </li>
 
                 <li> 
-                    <a href="/sobre">Sobre a GCÓR</a>
+                    <Link to="/exams">Exames</Link>
                 </li>
                 <li> 
-                    <a href="/contato">Contato</a>
+                    <Link to="/insurance">Convênios</Link>
+                </li>
+                <li> 
+                    <Link to="/doctors">Corpo Clínico</Link>
+                </li>
+
+                <li> 
+                    <Link to="/about">Sobre a GCÓR</Link>
+                </li>
+                <li> 
+                    <Link to="/contact">Contato</Link>
                 </li>
             </ul>
             

@@ -10,8 +10,6 @@
   height: auto; /* Mantém a proporção da imagem */
 }
 
-
-
 @media (max-width: 576px) {
   .text-portal {
     font-size: 0.8em;
@@ -61,7 +59,6 @@
   position: absolute;
   left: 13%; /* Ajustado para uma posição mais responsiva */
   font-size: 1em; /* Tamanho de fonte responsivo */
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 40%; /* Ajustado para uma posição mais responsiva */
   background-color: #4f8181;
   color: #fff;

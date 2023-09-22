@@ -12,7 +12,7 @@ export default function Header(){
     return(
       <AnimatedComponent duration={1.4} delay={0.5}>
         <div className="container-header">
-        <img src={logo} className="logo-header" />
+        <Link to= "/"><img src={logo} className="logo-header" /> </Link>
 
         <Link to="https://resultados.alcordiagnosticos.com.br/web_laudos/login.asp" target="_blank">
 <div class="button-container-portal">

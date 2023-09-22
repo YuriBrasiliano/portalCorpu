@@ -16,8 +16,17 @@ export default function Footer(){
             <li><a href="/sobre">Sobre Nós</a></li>
             <li><a href="/servicos">Serviços</a></li>
             <li><a href="/especialistas">Especialistas</a></li>
-            <li><a href="/contato">Contato</a></li>
           </ul>
+          
+        </div>
+        <div className="footer-menu">
+          <ul>
+            <li><a href="/">Página Inicial</a></li>
+            <li><a href="/sobre">Sobre Nós</a></li>
+            <li><a href="/servicos">Serviços</a></li>
+            <li><a href="/especialistas">Especialistas</a></li>
+          </ul>
+          
         </div>
         <div className="footer-contact">
           <div className="contact-info">
