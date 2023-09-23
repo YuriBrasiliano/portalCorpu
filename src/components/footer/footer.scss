@@ -1,13 +1,14 @@
 /* Estilo do rodapé */
 .footer {
-    background-color: #1d5a4f;
-    color: #ffffff;
-    padding: 40px 0;
-    width: 100vw;
-    font-size: 16px;
-    font-family: cursive;
-  }
-  
+  background-color: #1d5a4f;
+  color: #ffffff;
+  padding: 40px 0;
+  width: 100vw;
+  font-size: 16px;
+  position: relative;
+  bottom: 0;
+  font-family: cursive;
+}
   .footer-content {
     display: flex;
     justify-content: space-between;

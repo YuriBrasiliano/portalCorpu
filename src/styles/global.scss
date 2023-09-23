@@ -4,19 +4,11 @@ body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   overflow-x: hidden;
 }
-.slide-entering,
-.slide-exiting,
-.slide-entered,
-.slide-exited {
-  transition: transform 0.5s ease-in-out;
+.title{
+  color: #278070;
+  font-weight: 400;
+  font-size: 2.5vw;
 }
-
-.slide-entering,
-.slide-exiting {
-  transform: translateX(100%);
-}
-
-.slide-entered,
-.slide-exited {
-  transform: translateX(0);
+.subtitle{
+  font-weight: 700;
 }
