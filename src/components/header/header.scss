@@ -55,9 +55,15 @@
   font-size: 1.5em; /* Tamanho de fonte responsivo */
 }
 
+.fraselegal{
+  text-align: center;
+  font-family: cursive;
+  text-decoration: none !important;
+}
+
 .text-portal {
   position: absolute;
-  left: 13%; /* Ajustado para uma posição mais responsiva */
+  left: 11%; /* Ajustado para uma posição mais responsiva */
   font-size: 1em; /* Tamanho de fonte responsivo */
   width: 40%; /* Ajustado para uma posição mais responsiva */
   background-color: #4f8181;
@@ -85,4 +91,50 @@
     transform: rotate(360deg);
   }
 
+}
+
+.active a {
+  color: #2f4d4d !important;
+}
+.nav {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0 0 0 5%;
+  text-align: left;
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: inline;
+      margin-right: 20px;
+
+      a {
+        text-decoration: none;
+        color: #35997b;
+        font-weight: bold;
+        position: relative;
+
+        &:before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background-color: #278070; // Cor da linha de animação
+          transform: scaleX(0); // Inicialmente, a linha de animação tem largura zero
+          transform-origin: right;
+          transition: transform 0.3s ease-in-out; // Adiciona uma transição suave
+        }
+
+        &:hover {
+          &:before {
+            transform: scaleX(1); // Aumenta a largura da linha de animação no hover
+            transform-origin: left;
+          }
+        }
+      }
+    }
+  }
 }

@@ -5,7 +5,7 @@ import About from "./pages/about/About"
 import Contact from "./pages/contact/Contact"
 import Exams from "./pages/exams/Exams"
 import Insurance from "./pages/insurance/Insurance"
-import Specialties from "./pages/insurance/Insurance"
+import Specialties from "./pages/specialties/Specialties"
 import React from 'react';
 import "./styles/global.scss"
 

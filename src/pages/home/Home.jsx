@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import LoadingPage from '../../utils/loadingpage/LoadingPage';
-import Navbar from '../../components/home/navbar/Navbar';
 import Header from '../../components/header/Header';
 import CarouselHome from '../../components/home/bannerhome/CarouselHome';
 import Footer from '../../components/footer/Footer';
@@ -27,7 +26,6 @@ export default function Home(){
             ) : (
               <>
                 <Header />
-                <Navbar />
                 <CarouselHome />
                 <Testimonials />
                 <Footer />

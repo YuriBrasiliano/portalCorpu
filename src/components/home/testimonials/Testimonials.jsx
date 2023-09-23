@@ -16,7 +16,22 @@ export default function Testimonials() {
     autoplay: true,
     pauseOnHover: false,
     autoplaySpeed: 3000, // Tempo de rotação de cada slide em milissegundos
+    responsive: [
+      {
+        breakpoint: 768, // Tamanho da tela em que a configuração será aplicada
+        settings: {
+          slidesToShow: 2, // Número de slides a serem mostrados em telas menores
+        },
+      },
+      {
+        breakpoint: 480, // Tamanho da tela em que a configuração será aplicada
+        settings: {
+          slidesToShow: 1, // Número de slides a serem mostrados em telas ainda menores
+        },
+      },
+    ],
   };
+ 
 
   /*
   function renderRatingStars(rating) {

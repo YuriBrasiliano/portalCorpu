@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import LoadingPage from '../../utils/loadingpage/LoadingPage';
 import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
+import SpecialtiesBanner from '../../components/specialties/banner/SpecialtiesBanner';
 
 
 export default function Specialties(){
@@ -24,6 +25,7 @@ export default function Specialties(){
             ) : (
               <>
                 <Header />
+                <SpecialtiesBanner />
                 <Footer />
               </>
             )}

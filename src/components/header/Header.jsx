@@ -4,9 +4,21 @@ import React from 'react';
 import AnimatedComponent from '../../utils/AnimatedComponent';
 import {FaUserDoctor} from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 export default function Header(){
 
+  const location = useLocation();
+  const [currentPath, setCurrentPath] = useState('');
+
+  useEffect(() => {
+    setCurrentPath(location.pathname);
+  }, [location]);
+
+  const isActivePage = (page) => {
+    return currentPath === page ? 'active' : '';
+  };
 
   
     return(
@@ -24,7 +36,34 @@ export default function Header(){
         </div>
      
         </Link>
+        
         </div>
+        <nav className="nav">
+            <ul>
+                <li className={isActivePage('/')}> 
+                    <Link to="/">Home</Link>
+                </li>
+                <li className={isActivePage('/specialties')}> 
+                <Link to="/specialties">Especialiades</Link>
+                </li>
+                <li className={isActivePage('/exams')}> 
+                    <Link to="/exams">Exames</Link>
+                </li>
+                <li className={isActivePage('/insurance')}> 
+                    <Link to="/insurance">Convênios</Link>
+                </li>
+                <li className={isActivePage('/doctors')}> 
+                    <Link to="/doctors">Corpo Clínico</Link>
+                </li>
+                <li className={isActivePage('/about')}> 
+                    <Link to="/about">Sobre a GCÓR</Link>
+                </li>
+                <li className={isActivePage('/contact')}> 
+                    <Link to="/contact">Contato</Link>
+                </li>
+            </ul>
+            
+        </nav>
         </AnimatedComponent>
     )
 }

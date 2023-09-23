@@ -1,6 +1,8 @@
 .carousel-container {
   width: 100vw; 
   overflow-x: hidden;
+  margin-top: 3%;
+ /* background-color: #b6f1e7; */
 
 }
 .title{
@@ -27,9 +29,9 @@
 }
 
 .image {
-  margin-left: 30%;
+  margin-left: auto;
   opacity: 0.7;
-  width: 70%; /* Defina a largura máxima da imagem em relação à largura da tela */
+  width: 60%; /* Defina a largura máxima da imagem em relação à largura da tela */
   height: auto; /* Defina a altura máxima da imagem */
   z-index: 0;
 }
