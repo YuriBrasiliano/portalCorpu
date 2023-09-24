@@ -22,13 +22,6 @@
   .button-container-portal {
     margin-top: 10px;
   }
-
-  .hover-button-portal {
-    width: 30px;
-    height: 30px;
-    font-size: 100%;
-  }
-
   .text-portal
   {
     display: none;
@@ -55,12 +48,6 @@
   font-size: 1.5em; /* Tamanho de fonte responsivo */
 }
 
-.fraselegal{
-  text-align: center;
-  font-family: cursive;
-  text-decoration: none !important;
-}
-
 .text-portal {
   position: absolute;
   left: 11%; /* Ajustado para uma posição mais responsiva */
@@ -78,6 +65,7 @@
 
 .button-icon-portal {
   color: white;
+  display: flex;
   font-size: 100%;
 }
 
@@ -93,10 +81,12 @@
 
 }
 
-.active a {
+.selected a {
   color: #2f4d4d !important;
 }
 .nav {
+  display: flex;
+  justify-content: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 0 0 0 5%;
   text-align: left;
@@ -104,6 +94,7 @@
   ul {
     list-style: none;
     padding: 0;
+    display: flex;
 
     li {
       display: inline;
@@ -137,4 +128,33 @@
       }
     }
   }
+}
+.titlenavbar{
+  cursor: pointer;
+  color: #35997b;
+  font-weight: bold;
+  display: none;
+}
+.titlenavbar:hover{
+  color: #2f4d4d;
+
+}
+
+@media (max-width: 730px) {
+  .titlenavbar{
+    display: flex;
+  }
+  .nav ul {
+    display: none;
+  }
+  .nav-list a{
+    display: block;
+    text-align: center;
+  }
+
+
+}
+.nav ul.active {
+  display: block;
+  
 }

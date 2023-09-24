@@ -18,6 +18,12 @@ export default function Testimonials() {
     autoplaySpeed: 3000, // Tempo de rotação de cada slide em milissegundos
     responsive: [
       {
+        breakpoint: 1024, // Tamanho da tela em que a configuração será aplicada
+        settings: {
+          slidesToShow: 3, // Número de slides a serem mostrados em telas menores
+        },
+      },
+      {
         breakpoint: 768, // Tamanho da tela em que a configuração será aplicada
         settings: {
           slidesToShow: 2, // Número de slides a serem mostrados em telas menores

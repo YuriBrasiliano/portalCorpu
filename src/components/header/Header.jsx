@@ -7,7 +7,20 @@ import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
+
 export default function Header(){
+
+
+
+      const [navigationMenu, setNavigationMenu] = useState(null);
+      const [titlenavbar, settitlenavbar] = useState(null);
+
+      useEffect(() => {
+        settitlenavbar(document.querySelector('.titlenavbar'));
+        setNavigationMenu(document.querySelector('.nav ul'));
+      }, []);
+
+  
 
   const location = useLocation();
   const [currentPath, setCurrentPath] = useState('');
@@ -17,7 +30,7 @@ export default function Header(){
   }, [location]);
 
   const isActivePage = (page) => {
-    return currentPath === page ? 'active' : '';
+    return currentPath === page ? 'selected' : '';
   };
 
   
@@ -39,7 +52,14 @@ export default function Header(){
         
         </div>
         <nav className="nav">
-            <ul>
+          <div className="menu-toggle" onClick={() => {
+        navigationMenu.classList.toggle('active'); 
+        titlenavbar.style.display = 'none';    
+      }}>
+            <div className="titlenavbar">Menu</div>
+            <br />
+          </div>
+            <ul className="nav-list">
                 <li className={isActivePage('/')}> 
                     <Link to="/">Home</Link>
                 </li>
