@@ -2,6 +2,10 @@ import image1 from '../assets/images/c-15.webp';
 import image2 from '../assets/images/c-3.webp';
 import image3 from '../assets/images/c-7.webp';
 import image4 from "../assets/images/c-2.webp"
+import image5 from "../assets/images/c-4.webp"
+import image6 from "../assets/images/c-5.webp"
+import image7 from "../assets/images/c-6.webp"
+import image8 from "../assets/images/c-8.webp"
 
 const CarouselHomeData = [
   {
@@ -84,33 +88,33 @@ export const testimonials = [
 
 export const specialties = [
   {
-    description: 72163,
+    description: "Um cardiologista é um médico especializado no diagnóstico, tratamento e prevenção de doenças relacionadas ao coração e ao sistema circulatório. Eles cuidam de problemas como doença cardíaca coronária, hipertensão, insuficiência cardíaca e arritmias cardíacas.",
     name: "Cardiologista",
     image: image4,
   },
   {
     description:
-    "Yuri has the ability to identify and address complex technical issues, as well as his expertise in data analysis and system integration.",
+    "O clínico geral, também conhecido como médico de família, trata uma ampla variedade de problemas de saúde em pacientes de todas as idades. Eles são geralmente o primeiro ponto de contato para problemas de saúde e fazem diagnósticos iniciais, encaminham para especialistas quando necessário e oferecem cuidados preventivos.",
     name: "Clínico Geral",
-    image: image4,
+    image: image5,
   },
   {
     description:
-    "His proficiency in front-end technologies and design principles make him an invaluable asset to any web development project.",
+    "Os endocrinologistas são especializados no tratamento de distúrbios hormonais. Eles cuidam de condições como diabetes, doenças da tireoide, obesidade, distúrbios hormonais e muitos outros problemas relacionados às glândulas endócrinas.",
     name: "Endócrinologista",
-    image: image4,
+    image: image6,
   },
   {
     description:
-    "His proficiency in front-end technologies and design principles make him an invaluable asset to any web development project.",
+    "Um nutricionista é um profissional de saúde especializado em nutrição e dieta. Eles ajudam as pessoas a melhorar sua saúde por meio de orientação alimentar. Isso pode envolver a criação de planos de dieta personalizados, tratando distúrbios alimentares, fornecendo educação nutricional e promovendo uma alimentação saudável.",
     name: "Nutricionista",
-    image: image4,
+    image: image7,
   },
   {
     description:
-    "His proficiency in front-end technologies and design principles make him an invaluable asset to any web development project.",
+    "Os pneumologistas são especializados no diagnóstico e tratamento de doenças pulmonares e respiratórias. Eles tratam condições como asma, bronquite crônica, enfisema, pneumonia, apneia do sono e outras doenças que afetam os pulmões e o sistema respiratório.",
     name: "Pneumologista",
-    image: image4,
+    image: image8,
   }
 ];
 

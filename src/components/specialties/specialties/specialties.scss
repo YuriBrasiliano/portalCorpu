@@ -5,7 +5,7 @@
   }
   
   .item-specialties {
-    background-color: #6bafaf;
+    background-color: #4c8883;
     text-align: center;
     width: calc(33.33% - 20px);
     margin: 10px;
@@ -20,20 +20,27 @@
   }
   
   .item-specialties:hover {
-    background-color: lightcyan;
+    background-color: #6bafaf;
     transform: scale(1.05);
     transition: background-color 0.3s, transform 0.3s;
   }
   
   .image-specialties img {
     border-radius: 50%;
-    max-width: 100%;
+    width: 20vw;
     height: auto;
     margin-bottom: 10px;
+  }
+  .name-specialties{
+    font-weight: 900;
+    color: white;
+    font-size: 1.2em;
   }
   
   .text-specialties {
     font-size: 16px;
+    color: black;
+    font-weight: 600;
     line-height: 1.4;
   }
   
