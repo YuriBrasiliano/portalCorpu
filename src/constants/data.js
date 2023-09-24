@@ -1,6 +1,7 @@
 import image1 from '../assets/images/c-15.webp';
 import image2 from '../assets/images/c-3.webp';
 import image3 from '../assets/images/c-7.webp';
+import image4 from "../assets/images/c-2.webp"
 
 const CarouselHomeData = [
   {
@@ -45,6 +46,80 @@ export const testimonials = [
     name: "Eliana Colucci",
     rating: "5",
     doctor: "Eleni Nathanailidis",
+    image: "https://randomuser.me/api/portraits/women/2.jpg",
+  },
+  {
+    testimonial:
+    "Yuri has the ability to identify and address complex technical issues, as well as his expertise in data analysis and system integration.",
+    name: "Renan Araujo",
+    rating: "5",
+    doctor: "Walter Moras Junior",
+    image: "https://randomuser.me/api/portraits/men/1.jpg",
+  },
+  {
+    testimonial:
+    "His proficiency in front-end technologies and design principles make him an invaluable asset to any web development project.",
+    name: "Gabriela Melo",
+    rating: "5",
+    doctor: "Maristela Oliveira",
+    image: "https://randomuser.me/api/portraits/women/6.jpg",
+  },
+  {
+    testimonial:
+    "His proficiency in front-end technologies and design principles make him an invaluable asset to any web development project.",
+    name: "Emily Emanuelly",
+    rating: "5",
+    doctor: "Maristela Oliveira",
+    image: "https://randomuser.me/api/portraits/women/1.jpg",
+  },
+  {
+    testimonial:
+    "His proficiency in front-end technologies and design principles make him an invaluable asset to any web development project.",
+    name: "Fulado de Tal",
+    rating: "5",
+    doctor: "Maristela Oliveira",
+    image: "https://randomuser.me/api/portraits/men/20.jpg",
+  },
+];
+
+export const specialties = [
+  {
+    description: 72163,
+    name: "Cardiologista",
+    image: image4,
+  },
+  {
+    description:
+    "Yuri has the ability to identify and address complex technical issues, as well as his expertise in data analysis and system integration.",
+    name: "Clínico Geral",
+    image: image4,
+  },
+  {
+    description:
+    "His proficiency in front-end technologies and design principles make him an invaluable asset to any web development project.",
+    name: "Endócrinologista",
+    image: image4,
+  },
+  {
+    description:
+    "His proficiency in front-end technologies and design principles make him an invaluable asset to any web development project.",
+    name: "Nutricionista",
+    image: image4,
+  },
+  {
+    description:
+    "His proficiency in front-end technologies and design principles make him an invaluable asset to any web development project.",
+    name: "Pneumologista",
+    image: image4,
+  }
+];
+
+export const doctors = [
+  {
+    crm: 72163,
+    name: "Eleni Nathanailidis",
+    rating: "5",
+    specialtie: "Cardiologista",
     image: "https://randomuser.me/api/portraits/women/2.jpg",
   },
   {
