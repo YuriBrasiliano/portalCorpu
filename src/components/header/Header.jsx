@@ -30,7 +30,7 @@ export default function Header(){
   }, [location]);
 
   const isActivePage = (page) => {
-    return currentPath === page ? 'selected' : '';
+    return currentPath === page ? 'page' : '';
   };
 
   
