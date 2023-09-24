@@ -6,22 +6,15 @@
 
 .logo-header {
   margin-left: 10%;
-  max-width: 70%; /* Garante que a imagem não ultrapasse seu contêiner */
+  width: 60%; /* Garante que a imagem não ultrapasse seu contêiner */
   height: auto; /* Mantém a proporção da imagem */
 }
 
-@media (max-width: 576px) {
-  .text-portal {
-    font-size: 0.8em;
+@media (max-width: 900px) {
+  .logo-header{
+    width: 100%;
   }
 
-  .text-contact {
-    font-size: 0.8em;
-  }
-
-  .button-container-portal {
-    margin-top: 10px;
-  }
   .text-portal
   {
     display: none;
@@ -132,12 +125,12 @@
 }
 .titlenavbar{
   cursor: pointer;
-  color: #35997b;
+  color: white;
   font-weight: bold;
   display: none;
 }
 .titlenavbar:hover{
-  color: #2f4d4d;
+  color: #bdbaba;
 
 }
 

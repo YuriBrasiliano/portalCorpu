@@ -5,17 +5,26 @@
  /* background-color: #b6f1e7; */
 
 }
+.carousel-item{
+  overflow-x: hidden;
+}
+
 .paragraph {
   color: rgb(0, 0, 0);
-  font-size: 1.3vw; /* Use vw para ajustar o tamanho da fonte em relação à largura da tela */
+  font-size: 1.2em; /* Use vw para ajustar o tamanho da fonte em relação à largura da tela */
+}
+.image img {
+  height: 100% !important;
+  width: auto !important;
 }
 
 .text {
+  margin-top: 4%;
   flex: 1;
   padding: 0 2%;
   position: absolute; /* Posicionamento absoluto para o texto */  
   width: 40%;
-  height: 100%;
+  height: auto;
   box-sizing: border-box; /* Para incluir preenchimento e borda no dimensionamento da largura */
   z-index: 1; /* Elevar o texto acima da imagem */
 }
@@ -27,13 +36,6 @@
   height: auto; /* Defina a altura máxima da imagem */
   z-index: 0;
 }
-
-/* Personalize a cor dos pontos de navegação */
-.carousel .dot {
-  background-color: #026d37; /* Altere a cor conforme necessário */
-  border: 7px solid #00bcd4; /* Borda dos pontos */
-}
-
 /* Estilize a transição entre slides */
 .carousel .slider-wrapper {
   transition: transform 0.5s ease; /* Tempo de transição e suavidade (ajuste conforme necessário) */
@@ -47,9 +49,9 @@
   padding: 10px 20px;
   margin-top: 10%;
   height: 9%;
-  width: 50%;
+  width: 60%;
   border-radius: 35px;
-  font-size: 1.3vw;
+  font-size: .8em;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adicione transições para transform e sombra */
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adicione uma sombra */
@@ -68,3 +70,52 @@
   padding: 0;
   margin: 0;
 }
+
+
+.text {
+  width: 50%;
+  padding: 0 5%;
+}
+
+.image {
+  height: 55vh;
+}
+
+@media (min-width: 860px) {
+  .title {
+    font-size: 2.6em;
+  }
+  .paragraph {
+    font-size: 1.2em;
+  }
+  .image {
+    height: 45vh;
+  }
+}
+@media (max-width: 860px) {
+  .text {
+    width: 80%;
+  }
+
+  .image {
+    width: 100vw !important;
+    opacity: .5;
+  }
+}
+
+@media (min-width: 1800px) {
+  .title {
+    font-size: 3em !important;
+  }
+  .paragraph {
+    font-size: 1.3em;
+  }
+  .image {
+    height: 70vh;
+  }
+}
+
+
+
+
+

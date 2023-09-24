@@ -10,28 +10,29 @@ import { useEffect, useState } from 'react';
 
 export default function Header(){
 
-
-
       const [navigationMenu, setNavigationMenu] = useState(null);
       const [titlenavbar, settitlenavbar] = useState(null);
+      const location = useLocation();
+      const [currentPath, setCurrentPath] = useState('');
 
       useEffect(() => {
         settitlenavbar(document.querySelector('.titlenavbar'));
         setNavigationMenu(document.querySelector('.nav ul'));
-      }, []);
-
-  
-
-  const location = useLocation();
-  const [currentPath, setCurrentPath] = useState('');
-
-  useEffect(() => {
-    setCurrentPath(location.pathname);
-  }, [location]);
-
-  const isActivePage = (page) => {
-    return currentPath === page ? 'page' : '';
-  };
+        setCurrentPath(location.pathname);
+      }, [location]);
+      
+      
+      const closeMenu = () => {
+        navigationMenu.classList.remove('active');
+        titlenavbar.style.display = 'block';
+      };
+      const openMenu = () =>{
+        navigationMenu.classList.toggle('active'); 
+        titlenavbar.style.display = 'none';  
+      }
+      const isActivePage = (page) => {
+        return currentPath === page ? 'page' : '';
+      };
 
   
     return(
@@ -52,34 +53,31 @@ export default function Header(){
         
         </div>
         <nav className="nav">
-          <div className="menu-toggle" onClick={() => {
-        navigationMenu.classList.toggle('active'); 
-        titlenavbar.style.display = 'none';    
-      }}>
+          <div className="menu-toggle" onClick={() => openMenu()}>
             <div className="titlenavbar">Menu</div>
             <br />
           </div>
             <ul className="nav-list">
                 <li className={isActivePage('/')}> 
-                    <Link to="/">Home</Link>
+                    <Link to="/" onClick={() => closeMenu()}>Home</Link>
                 </li>
                 <li className={isActivePage('/specialties')}> 
-                <Link to="/specialties">Especialiades</Link>
+                <Link to="/specialties" onClick={() => closeMenu()}>Especialiades</Link>
                 </li>
                 <li className={isActivePage('/exams')}> 
-                    <Link to="/exams">Exames</Link>
+                    <Link to="/exams" onClick={() => closeMenu()}>Exames</Link>
                 </li>
                 <li className={isActivePage('/insurance')}> 
-                    <Link to="/insurance">Convênios</Link>
+                    <Link to="/insurance" onClick={() => closeMenu()}>Convênios</Link>
                 </li>
                 <li className={isActivePage('/doctors')}> 
-                    <Link to="/doctors">Corpo Clínico</Link>
+                    <Link to="/doctors" onClick={() => closeMenu()}>Corpo Clínico</Link>
                 </li>
                 <li className={isActivePage('/about')}> 
-                    <Link to="/about">Sobre a GCÓR</Link>
+                    <Link to="/about" onClick={() => closeMenu()}>Sobre a GCÓR</Link>
                 </li>
                 <li className={isActivePage('/contact')}> 
-                    <Link to="/contact">Contato</Link>
+                    <Link to="/contact" onClick={() => closeMenu()}>Contato</Link>
                 </li>
             </ul>
             

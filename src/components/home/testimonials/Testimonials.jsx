@@ -30,7 +30,7 @@ export default function Testimonials() {
         },
       },
       {
-        breakpoint: 480, // Tamanho da tela em que a configuração será aplicada
+        breakpoint: 520, // Tamanho da tela em que a configuração será aplicada
         settings: {
           slidesToShow: 1, // Número de slides a serem mostrados em telas ainda menores
         },
