@@ -1,26 +1,107 @@
-.image-banner-spec img {
-    width: 65vw;
-    opacity: 0.7;
-    height: auto;
-    position: relative;
-    margin-top: 3%;
-    right: 0;
-    left: 35%;
-    z-index: 1;
-    margin-bottom: 150px;
-  }
-  
-  .text-banner-spec {
-    position: absolute;
-    margin-top: 10%;
-    z-index: 2;
-    width: 35vw;
-    text-align: center;
+/* Estilos base para imagens e texto */
+.image-specs img {
+  position: absolute;
+  margin-top: 3%;
+  margin-left: auto;
+  right: 0;
+  width: 45vw;
+  z-index: 1;
+}
+
+.text-banner-spec {
+  position: absolute;
+  margin-top: 5%;
+  z-index: 2;
+  width: 50vw;
+  text-align: center;
+}
+
+/* Parágrafos e títulos */
+.paragraph-specs {
+  text-align: center;
+  font-size: 1.1em;
+  line-height: 2;
+}
+
+.title-specs {
+  color: #278070;
+  font-weight: 400;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+/* Responsividade para telas pequenas (entre 500px e 850px) */
+@media (max-width: 850px) and (min-width: 500px) {
+  .specialties-container {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .paragraph-specialties{
-    text-align: center;
-    padding: 10%;
-    font-size: 1.1em;
-    line-height: 2;
+  .specs-title {
+    margin-top: 85% !important;
   }
+
+  .item-specialties {
+    width: 80vw !important;
+  }
+
+  .image-specs img {
+    width: 100vw;
+    height: fit-content !important;
+    opacity: 0.5;
+  }
+
+  .text-banner-spec {
+    width: 100vw;
+  }
+}
+@media (max-width: 1050px) and (min-width: 750px) {
+  .text-banner-spec {
+    width: 70vw !important;
+  }
+  .specs-title {
+    margin-top: 40% !important;
+  }
+  .image-specs img {
+    height: fit-content;
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 1500px) and (min-width: 850px) {
+  .text-banner-spec {
+    width: 90vw;
+    margin: auto;
+    margin-left: 5%;
+  }
+  .specs-title {
+    margin-top: 40% !important;
+  }
+  .image-specs img {
+    height: fit-content;
+    opacity: 0.5;
+  }
+}
+
+/* Responsividade para telas menores (até 500px) */
+@media (max-width: 500px) {
+  .specs-title {
+    margin-top: 95% !important;
+  }
+
+  .item-specialties {
+    width: 80vw !important;
+  }
+
+  .image-specs img {
+    height: 34.5% !important;
+    width: 100vw;
+    opacity: 0.5;
+  }
+
+  .text-banner-spec {
+    width: 80vw;
+    margin-left: 8% !important;
+    margin-top: -4%;
+  }
+}

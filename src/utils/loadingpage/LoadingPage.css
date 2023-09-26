@@ -16,6 +16,13 @@
   z-index: 999;
 }
 
+@media (max-width: 860px) {
+  .loading-container img{
+    max-width: 95vw;
+    height: auto;
+  }
+}
+
 .loading-container.hidden {
   opacity: 0;
   transform: translateY(-100%);

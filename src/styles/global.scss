@@ -12,3 +12,37 @@ body{
 .subtitle{
   font-weight: 700;
 }
+
+@media (min-width: 860px) {
+  .title {
+    font-size: 2.6em;
+  }
+  .paragraph {
+    font-size: 1.2em;
+  }
+  .image {
+    height: 45vh;
+  }
+}
+@media (max-width: 860px) {
+  .text {
+    width: 80%;
+  }
+
+  .image {
+    width: 100vw !important;
+    opacity: .5;
+  }
+}
+
+@media (min-width: 1800px) {
+  .title {
+    font-size: 3em !important;
+  }
+  .paragraph {
+    font-size: 1.3em;
+  }
+  .image {
+    height: 70vh;
+  }
+}

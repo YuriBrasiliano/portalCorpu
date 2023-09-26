@@ -4,7 +4,9 @@ import { specialties } from "../../../constants/data";
 
 export default function SpecialtiesGcor(){
     return(
-        <AnimatedComponent duration={1.4} delay={1}>
+        <AnimatedComponent duration={1.4} delay={2}>
+          <p className="specs-title"> Nossas Especialiades</p>
+
           <div className="specialties-container">
       {specialties.map((specialties, index) => (
         <div key={index} className="item-specialties">

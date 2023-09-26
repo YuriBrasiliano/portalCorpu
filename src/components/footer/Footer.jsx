@@ -6,7 +6,7 @@ import { FaPhone, FaEnvelope, FaMapMarker } from 'react-icons/fa';
 export default function Footer(){
 
     return (
-<AnimatedComponent duration={0.8} delay={0.5} y= {0}> 
+<AnimatedComponent duration={0.8} delay={0.5} y={0}> 
     <footer className="footer">
       <div className="footer-content">
           <img src={logo} alt="Logo GCOR" className="footer-logo" />
