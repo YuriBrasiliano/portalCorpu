@@ -23,8 +23,10 @@ export default function Header(){
       
       
       const closeMenu = () => {
-        navigationMenu.classList.remove('active');
-        titlenavbar.style.display = 'block';
+        if (innerWidth >= "850px"){
+          navigationMenu.classList.remove('active');
+          titlenavbar.style.display = 'block';
+        }
       };
       const openMenu = () =>{
         navigationMenu.classList.toggle('active'); 
