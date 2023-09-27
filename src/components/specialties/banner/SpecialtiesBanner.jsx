@@ -1,6 +1,6 @@
 import "./specialtiesBanner.scss"
 import bannerimg from "../../../assets/images/c-1.webp"
-import AnimatedComponent from '../../../utils/AnimatedComponent';
+import AnimatedComponent from '../../../utils/Animations/AnimatedComponent';
 
 export default function SpecialtiesBanner(){
     return(

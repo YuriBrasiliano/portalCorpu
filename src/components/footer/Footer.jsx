@@ -1,5 +1,5 @@
 import "./footer.scss"
-import AnimatedComponent from '../../utils/AnimatedComponent';
+import AnimatedComponent from '../../utils/Animations/AnimatedComponent';
 import logo from "../../assets/images/logo.png"
 import { FaPhone, FaEnvelope, FaMapMarker } from 'react-icons/fa';
 

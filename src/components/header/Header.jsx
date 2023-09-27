@@ -1,7 +1,7 @@
 import logo from "../../assets/images/logo.png";
 import "./header.scss"
 import React from 'react'; 
-import AnimatedComponent from '../../utils/AnimatedComponent';
+import AnimatedComponent from '../../utils/Animations/AnimatedComponent';
 import {FaUserDoctor} from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
@@ -36,7 +36,7 @@ export default function Header(){
 
   
     return(
-      <AnimatedComponent duration={1.4} delay={0.5}>
+      <AnimatedComponent duration={1.4} delay={0.5} y= {-100}>
         <div className="container-header">
         <Link to= "/"><img src={logo} className="logo-header" /> </Link>
 

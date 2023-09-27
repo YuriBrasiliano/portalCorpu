@@ -1,37 +1,23 @@
-import React, { useState, useEffect, useRef } from 'react';
-import LoadingPage from '../../utils/loadingpage/LoadingPage';
+import React from 'react';
 import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
 import SpecialtiesBanner from '../../components/specialties/banner/SpecialtiesBanner';
 import SpecialtiesGcor from '../../components/specialties/specialties/SpecialtiesGcor';
+import AnimatedPage from '../../utils/Animations/AnimatedPage';
 
 
 export default function Specialties(){
 
-    const [loading, setLoading] = useState(true);
-    const loadingPageRef = useRef();
-
-    useEffect(() => {
-      // Simule um processo de carregamento demorado
-      setTimeout(() => {
-        setLoading(false);
-      }, 4800);
-    }, []);
-
 
     return (
-          <div className="App">
-            {loading ? (
-              <LoadingPage ref={loadingPageRef} />
-            ) : (
-              <>
+      <AnimatedPage>
+      <div className="App">
                 <Header />
                 <SpecialtiesBanner />
                 <SpecialtiesGcor />
                 <Footer />
-              </>
-            )}
           </div>
+          </AnimatedPage>
       );
     }
     

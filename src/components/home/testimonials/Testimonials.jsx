@@ -1,5 +1,5 @@
 import "./testimonials.scss";
-import AnimatedComponent from "../../../utils/AnimatedComponent";
+import AnimatedComponent from "../../../utils/Animations/AnimatedComponent";
 import { testimonials } from "../../../constants/data";
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';

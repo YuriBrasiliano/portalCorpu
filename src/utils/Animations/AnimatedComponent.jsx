@@ -2,7 +2,7 @@ import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 
-const AnimatedComponent = ({ children, duration, delay, y = 200 }) => {
+const AnimatedComponent = ({ children, duration, delay, y = 100 }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0,

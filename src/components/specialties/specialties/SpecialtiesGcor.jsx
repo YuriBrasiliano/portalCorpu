@@ -1,5 +1,5 @@
 import "./specialties.scss"
-import AnimatedComponent from '../../../utils/AnimatedComponent';
+import AnimatedComponent from '../../../utils/Animations/AnimatedComponent';
 import { specialties } from "../../../constants/data";
 
 export default function SpecialtiesGcor(){
