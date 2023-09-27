@@ -10,6 +10,7 @@ import AnimatedComponent from '../../../utils/Animations/AnimatedComponent';
 
 
 const CarouselComponent = () => {
+  
   return (
 <AnimatedComponent duration={1.4} delay={1.5}>
     <div className="carousel-container">

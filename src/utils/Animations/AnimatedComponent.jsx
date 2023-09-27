@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 
@@ -7,6 +7,11 @@ const AnimatedComponent = ({ children, duration, delay, y = 100 }) => {
     triggerOnce: true,
     threshold: 0,
   });
+
+  useEffect(() => {
+    // Carrega o componente de forma assíncrona
+    // ...
+  }, []);
 
   const variants = {
     hidden: { opacity: 0, y },
