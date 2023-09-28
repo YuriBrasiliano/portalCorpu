@@ -13,7 +13,7 @@ const CarouselComponent = () => {
   
   return (
 <AnimatedComponent duration={1.4} delay={1.5} className="carousel-container">
-      <Carousel showStatus={false} showIndicators={false} showThumbs={false} showArrows={false} autoPlay={true} interval={5000} infiniteLoop={true} transitionTime={2000} stopOnHover={false}>
+      <Carousel showStatus={false} showIndicators={false} showThumbs={false} showArrows={false} autoPlay={true} interval={8000} infiniteLoop={true} transitionTime={1500} stopOnHover={false}>
         {CarouselHomeData.map((CarouselHomeData, index) => (
           <div key={index} className="carousel-item">
             <AnimatedComponent duration={1.4} delay={1} x={-200} className="text" xExit={200}>
