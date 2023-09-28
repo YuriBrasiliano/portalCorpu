@@ -1,9 +1,8 @@
 .specialties-container {
-    display: flex;
-    
+    display: flex;    
     flex-wrap: wrap;
     justify-content: center;
-    background-color: rgb(207, 206, 206);
+    background-color: #d5f5f5;
   }
 
   .specs-title{
@@ -11,7 +10,6 @@
   color: white;
   font-weight: 700;
   margin: 0;
-  margin-top: 33.4%;
   font-size: 2em;
   background-color: #6bafaf;
   line-height: 2em;
@@ -21,7 +19,7 @@
     background-color: #4c8883;
     text-align: center;
     cursor: pointer;
-    width: 40%;
+    width: 30%;
     margin: 3%;
     border-radius: 20px;
     min-height: 300px;
@@ -58,6 +56,14 @@
     color: white;
     font-weight: 600;
     line-height: 1.4;
+  }
+
+  @media (max-width: 1000px) {
+    .item-specialties {
+      width: 70%;
+
+    }
+    
   }
   
 

@@ -41,10 +41,10 @@ export default function Header() {
     <>
       <AnimatedComponent duration={1.4} delay={0.5} y={-100} className={"container-header"}>
 
-        <AnimatedComponent duration={1} delay={1.5} x={-200} xExit={-200}>
+        <AnimatedComponent duration={1} delay={1.5} x={-400} xExit={-400}>
           <Link to="/"><img src={logo} className="logo-header" /> </Link>
         </AnimatedComponent>
-        <AnimatedComponent duration={1} delay={1.5} x={200} xExit={200}>
+        <AnimatedComponent duration={1} delay={1.5} x={400} xExit={400}>
           <Link to="https://resultados.alcordiagnosticos.com.br/web_laudos/login.asp" target="_blank">
             <div class="button-container-portal">
               <div class="button-portal">
@@ -57,7 +57,7 @@ export default function Header() {
           </Link>
         </AnimatedComponent>
       </AnimatedComponent>
-      <AnimatedComponent duration={1.4} delay={0.5} x={-1000} className={"nav"} xExit={1000}>
+      <AnimatedComponent duration={1.4} delay={0.5} x={-1000} className={"nav"} xExit={-1000}>
         <div className="menu-toggle" onClick={() => openMenu()}>
           <div className="titlenavbar">Menu</div>
           <br />

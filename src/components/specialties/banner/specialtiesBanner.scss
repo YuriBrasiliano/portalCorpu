@@ -1,18 +1,18 @@
-/* Estilos base para imagens e texto */
 .image-specs img {
-  position: absolute;
+  position: relative;
   margin-top: 3%;
-  margin-left: auto;
-  right: 0;
-  width: 45vw;
+  margin-left: 50%;
+  width: 50vw;
+  height: 100% !important;
   z-index: 1;
 }
 
 .text-banner-spec {
   position: absolute;
+  margin-left: 6%;
   margin-top: 5%;
   z-index: 2;
-  width: 50vw;
+  width: 40vw;
   text-align: center;
 }
 
@@ -30,78 +30,76 @@
   text-align: center;
 }
 
-/* Responsividade para telas pequenas (entre 500px e 850px) */
-@media (max-width: 850px) and (min-width: 500px) {
-  .specialties-container {
-    flex-direction: column;
-    align-items: center;
+@media (min-width: 1600px) {
+  .title-specs {
+      font-size: 2em;
   }
-
-  .specs-title {
-    margin-top: 85% !important;
-  }
-
-  .item-specialties {
-    width: 80vw !important;
-  }
-
-  .image-specs img {
-    width: 100vw;
-    height: fit-content !important;
-    opacity: 0.5;
-  }
-
   .text-banner-spec {
-    width: 100vw;
+    font-size: 1.3em;
+
   }
+  
+  
 }
-@media (max-width: 1050px) and (min-width: 750px) {
+@media (max-height: 619px) {
   .text-banner-spec {
-    width: 70vw !important;
+    margin-top: 0%;
   }
-  .specs-title {
-    margin-top: 40% !important;
-  }
-  .image-specs img {
-    height: fit-content;
-    opacity: 0.5;
-  }
-}
 
-@media (max-width: 1500px) and (min-width: 850px) {
-  .text-banner-spec {
-    width: 90vw;
-    margin: auto;
-    margin-left: 5%;
+  @media (max-width: 1300px){
+    .text-banner-spec {
+      margin: 0 0 0 10% !important;
+      width: 80vw !important;
+    }
+    
   }
-  .specs-title {
-    margin-top: 40% !important;
+  @media (max-width: 1000px) {
+    .banner-spec-container{
+      height: 75vh !important;
+    }
+    .image-specs img {
+      margin: 0;
+      opacity: .5;
+      width: 100vw;
+      min-height: 75vh !important;
+    }
+    
+    
   }
-  .image-specs img {
-    height: fit-content;
-    opacity: 0.5;
-  }
+  
 }
 
-/* Responsividade para telas menores (até 500px) */
-@media (max-width: 500px) {
-  .specs-title {
-    margin-top: 95% !important;
-  }
-
-  .item-specialties {
-    width: 80vw !important;
-  }
-
-  .image-specs img {
-    height: 34.5% !important;
-    width: 100vw;
-    opacity: 0.5;
-  }
-
+@media (max-width: 1300px){
   .text-banner-spec {
-    width: 80vw;
-    margin-left: 8% !important;
-    margin-top: -4%;
+    margin-top: 0%;
   }
+  
+}
+@media (max-width: 1150px){
+  .text-banner-spec {
+    width: 60vw;
+  }
+  
+}
+@media (max-width: 1000px) {
+  .banner-spec-container{
+    height: 35vh;
+  }
+  .text-banner-spec {
+   margin-left: 20%;
+  }
+  .image-specs img {
+    margin: 0;
+    opacity: .5;
+    width: 100vw;
+    height: 35vh !important;
+  } 
+}
+@media (max-width: 680px) {
+  .banner-spec-container{
+    height: 50vh;
+  }
+  .image-specs img {
+    height: 50vh !important;
+  } 
 }
