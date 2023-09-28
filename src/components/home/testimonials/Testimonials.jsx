@@ -2,6 +2,7 @@ import "./testimonials.scss";
 import AnimatedComponent from "../../../utils/Animations/AnimatedComponent";
 import { testimonials } from "../../../constants/data";
 import Slider from 'react-slick';
+import React from "react";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 

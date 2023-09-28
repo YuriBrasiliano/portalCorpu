@@ -20,7 +20,9 @@
 }
 
 .text {
+  text-align: justify;
   margin-top: 4%;
+  font-weight: 600;
   flex: 1;
   padding: 0 2%;
   position: absolute; /* Posicionamento absoluto para o texto */  
@@ -34,14 +36,17 @@
   margin-left: auto;
   opacity: 0.7;
   width: 60%; /* Defina a largura máxima da imagem em relação à largura da tela */
-  height: auto; /* Defina a altura máxima da imagem */
   z-index: 0;
 }
 /* Estilize a transição entre slides */
 .carousel .slider-wrapper {
   transition: transform 0.5s ease; /* Tempo de transição e suavidade (ajuste conforme necessário) */
 }
-
+@media (max-height: 619px) {
+  .image {
+    height: 100vh !important;
+  }
+}
 .buttoncarousel {
   font-weight: 600;
   border: none;
@@ -93,6 +98,18 @@
     height: 45vh;
   }
 }
+@media (min-width: 560px) and (max-width: 1500px) {
+  .title {
+    margin-top: 0;
+    width: 40vw;
+    
+    font-size: 2.6em;
+  }
+  .paragraph {
+    width: 50vw;
+    font-size: 1.2em;
+  }
+}
 @media (max-width: 860px) {
   .text {
     width: 80%;
@@ -100,7 +117,11 @@
 
   .image {
     width: 100vw !important;
-    opacity: .5;
+    opacity: .6 !important;
+  }
+  .paragraph {
+    width: 80vw;
+    font-size: 1.1em;
   }
 }
 
@@ -115,8 +136,3 @@
     height: 70vh;
   }
 }
-
-
-
-
-

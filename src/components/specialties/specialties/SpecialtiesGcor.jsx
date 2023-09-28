@@ -1,4 +1,5 @@
 import "./specialties.scss"
+import React from "react";
 import AnimatedComponent from '../../../utils/Animations/AnimatedComponent';
 import { specialties } from "../../../constants/data";
 

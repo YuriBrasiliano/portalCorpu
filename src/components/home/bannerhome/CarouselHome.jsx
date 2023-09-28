@@ -12,12 +12,11 @@ import AnimatedComponent from '../../../utils/Animations/AnimatedComponent';
 const CarouselComponent = () => {
   
   return (
-<AnimatedComponent duration={1.4} delay={1.5}>
-    <div className="carousel-container">
+<AnimatedComponent duration={1.4} delay={1.5} className="carousel-container">
       <Carousel showStatus={false} showIndicators={false} showThumbs={false} showArrows={false} autoPlay={true} interval={5000} infiniteLoop={true} transitionTime={2000} stopOnHover={false}>
         {CarouselHomeData.map((CarouselHomeData, index) => (
           <div key={index} className="carousel-item">
-            <div className="text">
+            <AnimatedComponent duration={1.4} delay={1} x={-200} className="text" xExit={200}>
               <p className="title">{CarouselHomeData.title}<span className='subtitle'>{CarouselHomeData.titlespan}</span></p>
               <div className="paragraph">
                 <p>{CarouselHomeData.p1}</p>
@@ -27,15 +26,14 @@ const CarouselComponent = () => {
                   <Link to={CarouselHomeData.link} className='linkbutton'>{CarouselHomeData.buttonName}</Link>
                 </button>
               </div>
-            </div>
-            <div className="image">
+              </AnimatedComponent>
+              <AnimatedComponent duration={1.4} delay={1} x={200} className={"image"} xExit={-200}>
               <img src={CarouselHomeData.src} alt={CarouselHomeData.alt} />
-            </div>
+              </AnimatedComponent>
           </div>
 
         ))}
       </Carousel>
-    </div>
     </AnimatedComponent>
   );
 }

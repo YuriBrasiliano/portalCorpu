@@ -1,4 +1,5 @@
 import "./specialtiesBanner.scss"
+import React from "react";
 import bannerimg from "../../../assets/images/c-1.webp"
 import AnimatedComponent from '../../../utils/Animations/AnimatedComponent';
 
