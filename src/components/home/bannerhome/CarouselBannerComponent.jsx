@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import './carouselhome.scss';
+import './CarouselBannerComponent.scss';
 import { Link } from "react-router-dom";
 import CarouselHomeData from "../../../constants/data.js";
 import AnimatedComponent from '../../../utils/Animations/AnimatedComponent';

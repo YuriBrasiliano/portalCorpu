@@ -1,5 +1,5 @@
 .carousel-container {
-  width: 100vw; 
+  width: 100vw;
   overflow-x: hidden;
   margin-top: 3%;
  /* background-color: #b6f1e7; */
@@ -16,7 +16,7 @@
 }
 .image img {
   opacity: .6;
-  height: 100% !important;
+  height: 100%;
   width: auto !important;
 }
 
@@ -25,7 +25,6 @@
   margin-top: 4%;
   font-weight: 600;
   flex: 1;
-  padding: 0 2%;
   position: absolute; /* Posicionamento absoluto para o texto */  
   width: 40%;
   height: auto;
@@ -84,10 +83,6 @@
   padding: 0 5%;
 }
 
-.image {
-  height: 55vh;
-}
-
 @media (min-width: 860px) {
   .title {
     font-size: 2.6em;
@@ -102,8 +97,7 @@
 @media (min-width: 560px) and (max-width: 1500px) {
   .title {
     margin-top: 0;
-    width: 40vw;
-    
+    width: 40vw;    
     font-size: 2.6em;
   }
   .paragraph {
@@ -118,6 +112,7 @@
 
   .image {
     width: 100vw !important;
+    height: 50vh;
     opacity: .6 !important;
   }
   .paragraph {

@@ -1,45 +1,12 @@
 import "./testimonials.scss";
 import AnimatedComponent from "../../../utils/Animations/AnimatedComponent";
 import { testimonials } from "../../../constants/data";
-import Slider from 'react-slick';
 import React from "react";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import SliderComponent from '../../../utils/Slider/SliderComponent';
 
 export default function Testimonials() {
-
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 1000,
-    slidesToShow: 4, // Quantidade de slides visíveis ao mesmo tempo
-    slidesToScroll: 1,
-    autoplay: true,
-    pauseOnHover: false,
-    autoplaySpeed: 3000, // Tempo de rotação de cada slide em milissegundos
-    responsive: [
-      {
-        breakpoint: 1024, // Tamanho da tela em que a configuração será aplicada
-        settings: {
-          slidesToShow: 3, // Número de slides a serem mostrados em telas menores
-        },
-      },
-      {
-        breakpoint: 768, // Tamanho da tela em que a configuração será aplicada
-        settings: {
-          slidesToShow: 2, // Número de slides a serem mostrados em telas menores
-        },
-      },
-      {
-        breakpoint: 520, // Tamanho da tela em que a configuração será aplicada
-        settings: {
-          slidesToShow: 1, // Número de slides a serem mostrados em telas ainda menores
-        },
-      },
-    ],
-  };
- 
-
   /*
   function renderRatingStars(rating) {
     const stars = [];
@@ -54,12 +21,13 @@ export default function Testimonials() {
 
   return (
     <div className="sectionTestimonials">
-    <AnimatedComponent duration={1.4} delay={1}>
-      <div className="titleTestimonials">Nossos Pacientes</div>
-
-    <Slider {...settings}>
+    <AnimatedComponent duration={1.3} delay={.5} x={-500} xExit={-500} className="titleTestimonials">
+      Nossos Pacientes
+      </AnimatedComponent>
+    <SliderComponent slides={4}>
       {testimonials.map((testimonial, index) => (
-        <div key={index} className="carousel-item-testimonial">
+        <AnimatedComponent duration={1.5} x={300} xExit={300} className="carousel-item-testimonial">
+        <div key={index}>
           <div className="image-testimonial">
               <img src={testimonial.image} alt={testimonial.name} />
                 </div>
@@ -76,11 +44,10 @@ export default function Testimonials() {
    
           </div>
         </div>
-      ))}
-    </Slider>
-
-      
-    </AnimatedComponent>
+        </AnimatedComponent>
+      ))}      
+    
+    </SliderComponent>
     </div>
   );
 }
