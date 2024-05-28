@@ -4,26 +4,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    justify-content: space-between;
 }
-.adGcor-image{
-    flex: 1;
+.image-banner-home{
+    width: 100%;
+    align-items: center;
+    display: flex;
 }
-.adGcor-text{
-    flex: 1;
-    margin-right: 20vw;
-}
-.adGcor-image img{
-    position: relative;
-    width: 50vw;
-    height: 60vh;
-
-}
-@media (max-height: 619px) {
-    .adGcor-image img{
-        height: 90vh;    
-    }
-    .adGcor-container{
-        height: 90vh;
-    }
-  }

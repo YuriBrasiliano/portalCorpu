@@ -1,7 +1,7 @@
 import "./footer.scss"
 import React from "react";
 import AnimatedComponent from '../../utils/Animations/AnimatedComponent';
-import logo from "../../assets/images/logo.png"
+import { assest } from "../../assets/assests";
 import { FaPhone, FaEnvelope, FaMapMarker } from 'react-icons/fa';
 
 export default function Footer(){
@@ -10,7 +10,7 @@ export default function Footer(){
 <AnimatedComponent duration={1.2} delay={0.5} x={500} xExit={500} className="footer"> 
       <div className="footer-content">
         <AnimatedComponent duration={1.3} delay={1.2} x={-500} xExit={-500} className="footer-logo">
-          <img src={logo} alt="Logo GCOR" />
+          <img src={assest.logo} alt="Logo GCOR" />
           </AnimatedComponent>
           <AnimatedComponent duration={1.3} delay={1.2} y={-300} yExit={-300} className="footer-menu">
           <ul>

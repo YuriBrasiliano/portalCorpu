@@ -1,48 +1,23 @@
-body{
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
   margin: 0;
   padding: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+  font-family: DM Sans;
+}
+
+body{
+  min-height: 100vh;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.App{
+  max-width: 100%;
+  margin: auto;
   overflow-x: hidden;
-}
-.title{
-  color: #278070;
-  font-weight: 400;
-  font-size: 1.8em;
-}
-.subtitle{
-  font-weight: 700;
-}
-
-@media (min-width: 860px) {
-  .title {
-    font-size: 2.6em;
-  }
-  .paragraph {
-    font-size: 1.2em;
-  }
-  .image {
-    height: 45vh;
-  }
-}
-@media (max-width: 860px) {
-  .text {
-    width: 80%;
-  }
-
-  .image {
-    width: 100vw !important;
-    opacity: .5;
-  }
-}
-
-@media (min-width: 1800px) {
-  .title {
-    font-size: 3em !important;
-  }
-  .paragraph {
-    font-size: 1.3em;
-  }
-  .image {
-    height: 70vh;
-  }
 }

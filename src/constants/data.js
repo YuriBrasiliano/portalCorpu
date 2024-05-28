@@ -1,11 +1,9 @@
-import image1 from '../assets/images/c-15.webp';
-import image2 from '../assets/images/c-3.webp';
-import image3 from '../assets/images/c-7.webp';
-import image4 from "../assets/images/c-2.webp"
-import image5 from "../assets/images/c-4.webp"
-import image6 from "../assets/images/c-5.webp"
-import image7 from "../assets/images/c-6.webp"
-import image8 from "../assets/images/c-8.webp"
+import { assest } from "../assets/assests";
+
+export const links = 
+  {
+    apiWhatsApp: "https://api.whatsapp.com/send/?phone=5511993850895&text&type=phone_number&app_absent=0"
+  }
 
 const CarouselHomeData = [
   {
@@ -16,7 +14,7 @@ const CarouselHomeData = [
     p3: "A GCÓR continua a ser um parceiro valioso na promoção da saúde de mais de 1 milhão de pacientes.",
     link: "/about",
     buttonName: "SOBRE NÓS",
-    src: image1,
+    src: assest.logo,
     alt: "Imagem 1"
   },
   {
@@ -27,7 +25,7 @@ const CarouselHomeData = [
     p3: "Venha conhecer a GCÓR e experimente a diferença da atenção médica de qualidade. Seu bem-estar merece o melhor.",
     link: "/exams",
     buttonName: "NOSSOS EXAMES",
-    src: image2,
+    src: assest.logo,
     alt: "Imagem 2"
   },
   {
@@ -38,7 +36,7 @@ const CarouselHomeData = [
     p3: "Eles estão constantemente atualizados com as últimas pesquisas e avanços médicos para garantir que você receba o tratamento mais avançado e eficaz.",
     link: "/doctors",
     buttonName: "CONHEÇA NOSSA EQUIPE",
-    src: image3,
+    src: assest.logo,
     alt: "Imagem 3"
   }
 ];
@@ -90,31 +88,31 @@ export const specialties = [
   {
     description: "Um cardiologista é um médico especializado no diagnóstico, tratamento e prevenção de doenças relacionadas ao coração e ao sistema circulatório. Eles cuidam de problemas como doença cardíaca coronária, hipertensão, insuficiência cardíaca e arritmias cardíacas.",
     name: "Cardiologista",
-    image: image4,
+    image: assest.logo,
   },
   {
     description:
     "O clínico geral, também conhecido como médico de família, trata uma ampla variedade de problemas de saúde em pacientes de todas as idades. Eles são geralmente o primeiro ponto de contato para problemas de saúde e fazem diagnósticos iniciais, encaminham para especialistas quando necessário e oferecem cuidados preventivos.",
     name: "Clínico Geral",
-    image: image5,
+    image: assest.logo,
   },
   {
     description:
     "Os endocrinologistas são especializados no tratamento de distúrbios hormonais. Eles cuidam de condições como diabetes, doenças da tireoide, obesidade, distúrbios hormonais e muitos outros problemas relacionados às glândulas endócrinas.",
     name: "Endócrinologista",
-    image: image6,
+    image: assest.logo,
   },
   {
     description:
     "Um nutricionista é um profissional de saúde especializado em nutrição e dieta. Eles ajudam as pessoas a melhorar sua saúde por meio de orientação alimentar. Isso pode envolver a criação de planos de dieta personalizados, tratando distúrbios alimentares, fornecendo educação nutricional e promovendo uma alimentação saudável.",
     name: "Nutricionista",
-    image: image7,
+    image: assest.logo,
   },
   {
     description:
     "Os pneumologistas são especializados no diagnóstico e tratamento de doenças pulmonares e respiratórias. Eles tratam condições como asma, bronquite crônica, enfisema, pneumonia, apneia do sono e outras doenças que afetam os pulmões e o sistema respiratório.",
     name: "Pneumologista",
-    image: image8,
+    image: assest.logo,
   }
 ];
 
