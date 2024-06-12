@@ -1,7 +1,7 @@
 import "./specialties.scss"
 import React from "react";
 import AnimatedComponent from '../../../utils/Animations/AnimatedComponent';
-import { specialties } from "../../../constants/data";
+import { constants } from "../../../constants/data";
 
 export default function SpecialtiesGcor(){
     return(
@@ -9,17 +9,17 @@ export default function SpecialtiesGcor(){
           <p className="specs-title"> Nossas Especialiades</p>
 
           <div className="specialties-container">
-      {specialties.map((specialties, index) => (
+      {constants.specialties.map((specialties, index) => (
         <div key={index} className="item-specialties">
           <div className="image-specialties">
-              <img src={specialties.image} alt={specialties.name} />
+              <img src={constants.specialties.image} alt={constants.specialties.name} />
                 </div>
             
                 <div className="name-specialties">
-                  <p>{specialties.name}</p>
+                  <p>{constants.specialties.name}</p>
               </div>
                 <div className="text-specialties">
-            <p>{specialties.description}</p>
+            <p>{constants.specialties.description}</p>
               
    
           </div>

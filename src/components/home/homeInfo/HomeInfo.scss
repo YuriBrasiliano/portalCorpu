@@ -1,0 +1,59 @@
+
+
+.HomeInfo-container {
+    display: flex; 
+    flex-wrap: wrap;
+    margin-top: 10%;
+    padding: 30px 7%;
+    align-items: center; /* Alinha verticalmente os itens */
+    gap: 50px; /* Espaçamento entre os elementos */
+  }
+  
+  .HomeInfo-container1 {
+    order: 1; /* Controla a ordem dos elementos no layout */
+    display: flex;
+  }
+  
+  .image-HomeInfo1 {
+    width: 45%; /* Define a largura da imagem */
+    margin-right: 10%; /* Adiciona espaço entre a imagem e o texto */
+  }
+  
+
+.title1HomeInfo, .title2HomeInfo{
+    margin-bottom: 5%;
+    text-align: center;
+    margin-top: 5%;
+    font-family: DM Serif Display;
+    font-size: 30px;
+  }
+  .text1HomeInfo, .text2HomeInfo{
+    text-align: justify;
+    line-height: 30px;
+    font-family: DM Sans;
+  }
+  
+  .HomeInfo-container2 {
+    padding: 10% 0;
+    order: 2; /* Controla a ordem dos elementos no layout */
+    display: flex;
+    flex-direction: row-reverse; /* Inverte a direção do flexbox */
+  }
+  
+  .image-HomeInfo2 {
+    width: 45%; /* Define a largura da imagem */
+    margin-left: 10%; /* Adiciona espaço entre a imagem e o texto */
+  }
+  
+  /* Media queries para ajustar o layout em telas menores */
+  @media (max-width: 768px) {
+    .image-HomeInfo1,
+    .image-HomeInfo2 {
+      width: 100%; /* Imagens em largura total em telas menores */
+      margin: 0 20px; /* Ajusta o espaçamento entre imagens e bordas */
+    }
+  
+    .HomeInfo-info1{
+      width: 100%; /* Textos em largura total em telas menores */
+    }
+  }

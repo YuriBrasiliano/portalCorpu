@@ -1,32 +1,146 @@
 .container-header {
-  padding: 10px 30px;
+  padding: 10px 4% 0px 2%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
-.container-header .logo-header{
+
+.container-header .logo-header {
   width: 220px;
+  margin-right: 15px;
 }
 
-.navbar-menu{
+.navbar-menu {
+  margin-top: 3.5%;
   display: flex;
   list-style: none;
   gap: 50px;
   color: #49557e;
   font-size: 16px;
-  margin-left: -26%;
   font-family: var(--mc-typography-font-family-sans);
 }
 
-.navbar-right{
+.navbar-right {
   display: flex;
   align-items: center;
   gap: 40px;
 }
 
-.button-login{
+.button-login {
   display: flex;
   align-items: center;
   gap: 6px;
+}
+
+.seta-menu-icon {
+  width: 22px;
+  padding-left: 7px;
+  transition: transform .3s ease-in-out; /* Transição suave para a rotação */
+}
+
+.seta-menu.open .seta-menu-icon {
+  transform: rotate(180deg); /* Rotação de 360 graus quando aberto */
+}
+
+a:hover {
+  color: rgba(101, 169, 164, 255);
+  fill: rgba(101, 169, 164, 255);
+}
+
+.menu-item {
+  list-style: none;
+}
+
+.menu-link, .menu-link-login {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.menu-link:hover .hover-line {
+  width: 100%;
+}
+
+.hover-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #01776d;
+  transition: width 0.3s ease;
+}
+
+.menu-link-login {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  position: relative;
+}
+
+.navbar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.menu-link {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.seta-menu {
+  display: flex;
+  align-items: center;
+  padding-left: 5px; /* Ajuste o espaçamento conforme necessário */
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  background-color: white;
+  border: 1px solid #ccc;
+  list-style: none;
+  padding: 0;
+  width:max-content;
+  margin: 0;
+  z-index: 1000;
+}
+.dropdown-menu li {
+  padding: 10px;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f1f1f1;
+}
+
+.menu-link .whats-icon, .contact-icon {
+  width: 30px;
+  color: #01776d;
+  size: 70px;
+}
+
+
+.menu-link .contact-icon {
+  rotate: 90deg;
 }

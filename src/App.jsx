@@ -6,6 +6,7 @@ import About from "./pages/about/About"
 import Contact from "./pages/contact/Contact"
 import Exams from "./pages/exams/Exams"
 import Insurance from "./pages/insurance/Insurance"
+import RequestDate from "./pages/requestDate/RequestDate";
 import Specialties from "./pages/specialties/Specialties"
 import React, { useState, useEffect, useRef } from 'react';
 import "./styles/global.scss"
@@ -40,6 +41,7 @@ function App() {
           <Route path="/exams" element={<Exams/>} />
           <Route path="/insurance" element={<Insurance/>} />
           <Route path="/specialties" element={<Specialties/>} />
+          <Route path="/requestDate" element={<RequestDate />} />
         </Routes>
       </AnimatePresence>
       

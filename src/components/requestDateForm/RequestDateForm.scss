@@ -1,0 +1,50 @@
+.request-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #e1f0ff;
+    overflow: hidden;
+}
+.header-request{
+    display: flex;
+    padding: 1% 2%;
+}
+.logo-request{
+    width: 200px;
+}
+.request{
+    gap: 150px;
+    padding: 4% 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title-request{
+    font-size: 35px;
+    font-family: DM Serif Display;
+}
+
+.left-request, .right-request{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.left-request{
+    margin-top: -20%;
+}
+
+.options-request{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.title-link-request{
+    font-size: 24px;
+    font-family: DM Serif Display;
+    color: #01776d;
+    padding-bottom: 10px;
+}
+
+.option-link:hover p{
+    color: #03b1a3;;
+}
